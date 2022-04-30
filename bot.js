@@ -17,7 +17,7 @@ bot.on('message', (msg) => {
 
     function showLocation() {
         bot.sendMessage(msg.chat.id, "Шукай нас тут📍");
-        bot.sendLocation(msg.chat.id,44.97108, -104.27719);
+        bot.sendLocation(msg.chat.id,49.595153, 34.552801);
     }
     let Hi = "Привіт";
     if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
@@ -36,7 +36,7 @@ bot.on('message', (msg) => {
     }
 
     if(msg.text.indexOf("Викладачі") === 0) {
-        bot.sendPhoto(msg.chat.id, "img/prepod.jpg",{caption : "Детальніше про викладачів дізнайтеся на офіційному сайті Полтавського державного аграрного университету: https://www.pdau.edu.ua/department/kafedra-ekonomichnoyi-kibernetyky-ta-informaciynyh-tehnologiy"});
+        bot.sendPhoto(msg.chat.id, "img/prepod.jpg",{caption : "Детальніше про викладачів дізнайтеся на офіційному сайті Полтавського державного аграрного університету: https://www.pdau.edu.ua/department/kafedra-ekonomichnoyi-kibernetyky-ta-informaciynyh-tehnologiy"});
     }
     
     let admissionInfo = "Вступ";
@@ -89,7 +89,7 @@ bot.on('message', (msg) => {
 
     let contactInfo = "Контакти";
     if(msg.text.indexOf(contactInfo) === 0) {
-        bot.sendMessage(msg.chat.id, "Контактна інформація кафедри:" + 
+        bot.sendMessage(msg.chat.id, "Контактна інформація кафедри: " + 
         "навчальний корпус №2,\nкабінети 201, 205, 207.\nТелефон/факс: (0532) 60-82-31\ne-mail: informac@pdaa.edu.ua\nОбери що саме тебе цікавить👇", {
             "reply_markup": {
                 "keyboard": [["Соц мережі", "Мапа"], ['🔙 Повернутися']]
